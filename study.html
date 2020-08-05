@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Your Study Platform</title>
+
+    <link rel="stylesheet" href="/proffy/styles/main.css">
+    <link rel="stylesheet" href="/proffy/styles/partials/page-study.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body id="page-study">
+
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/proffy">
+                    <img src="/proffy/images/icons/back.svg" alt="Back">
+                </a>
+                <img src="/proffy/images/logo.svg" alt="Proffy">
+            </div>
+
+            <div class="header-content">
+                <strong>Available Teachers</strong>
+                <form id="search-teachers">
+                    <div class="select-block">
+                        <label for="subject">Class</label>
+                        <select name="subject" id="subject">
+                            <option value="" disabled="" hidden="">Select an option</option>
+                            <option value="1">Art</option>
+                            <option value="2">Biology</option>
+                            <option value="3">Science</option>
+                            <option value="4">Physical Education</option>
+                            <option value="5">Physics</option>
+                            <option value="6">Geography</option>
+                            <option value="7">History</option>
+                            <option value="8">Math</option>
+                            <option value="9">Portuguese</option>
+                            <option value="10">Chemistry</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <label for="weekday">Days of the week</label>
+                        <select name="weekday" id="weekday">
+                            <option value="" disabled="" hidden="">Select an option</option>
+                            <option value="0">Sunday</option>
+                            <option value="1">Monday</option>
+                            <option value="2">Tuesday</option>
+                            <option value="3">Wednesday</option>
+                            <option value="4">Thusday</option>
+                            <option value="5">Friday</option>
+                            <option value="6">Saturday</option>
+                        </select>
+                    </div>
+                    <div class="input-block">
+                        <label for="time">Time</label>
+                        <input name="time" id="time" type="time">
+                    </div>
+                    <button type="submit">Filter</button>
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <article class="teacher-item">
+                <header>
+                    <img src="https://avatars0.githubusercontent.com/u/33735642?s=460&u=506a0c9779f66084bf6e61aed77c173fb97b85b9&v=4"
+                        alt="Diego Fernandes">
+                    <div>
+                        <strong>Alexandre Martins</strong>
+                        <span>Math</span>
+                    </div>
+                </header>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br>Donec metus justo, posuere eget nulla
+                    quis, consectetur tempus odio. Donec in risus non purus ullamcorper rutrum.</p>
+
+                <footer>
+                    <p>Price/hour<strong>R$ 20,00</strong>
+                    </p>
+                    <button type="button">
+                        <img src="/proffy/images/icons/whatsapp.svg" alt="Whatsapp">Say Hello!
+                    </button>
+                </footer>
+            </article>
+
+            <article class="teacher-item">
+                <header>
+                    <img src="https://avatars0.githubusercontent.com/u/33735642?s=460&u=506a0c9779f66084bf6e61aed77c173fb97b85b9&v=4"
+                        alt="Diego Fernandes">
+                    <div>
+                        <strong>Alexandre Martins</strong>
+                        <span>Math</span>
+                    </div>
+                </header>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br>Donec metus justo, posuere eget nulla
+                    quis, consectetur tempus odio. Donec in risus non purus ullamcorper rutrum.</p>
+
+                <footer>
+                    <p>Price/hour<strong>R$ 20,00</strong>
+                    </p>
+                    <button type="button">
+                        <img src="/proffy/images/icons/whatsapp.svg" alt="Whatsapp">Say Hello!
+                    </button>
+                </footer>
+            </article>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
