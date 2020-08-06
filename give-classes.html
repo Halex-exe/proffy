@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Your Study Platform</title>
+
+    <link rel="stylesheet" href="/proffy/styles/main.css">
+    <link rel="stylesheet" href="/proffy/styles/partials/header.css">
+    <link rel="stylesheet" href="/proffy/styles/partials/forms.css">
+    <link rel="stylesheet" href="/proffy/styles/partials/page-give-classes.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body id="page-give-classes">
+
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/proffy">
+                    <img src="/proffy/images/icons/back.svg" alt="Back">
+                </a>
+                <img src="/proffy/images/logo.svg" alt="Proffy">
+            </div>
+
+            <div class="header-content">
+                <strong>Amazing that you want to teach</strong>
+                <p>first step, fill the registration form</p>
+            </div>
+        </header>
+
+        <main>
+            <form action="" id="create-class">
+                <fieldset>
+                    <legend>Your data</legend>
+
+                    <div class="input-block">
+                        <label for="name">Full name</label>
+                        <input name="name" id="name" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="avatar">Photo link <small>(start with https://)</small></label>
+                        <input name="avatar" id="avatar" type="url" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="whatsapp">WhatsApp <small>(only numbers)</small></label>
+                        <input name="whatsapp" id="whatsapp" type="number" required>
+                    </div>
+
+                    <div class="textarea-block">
+                        <label for="bio">biography</label>
+                        <textarea name="bio" id="bio" required></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>About the class</legend>
+                    <div class="select-block">
+                        <label for="subject">Subject</label>
+                        <select name="subject" id="subject" required>
+                            <option value="">Select an option</option>
+                            <option value="1">Art</option>
+                            <option value="2">Biology</option>
+                            <option value="3">Science</option>
+                            <option value="4">Physical Education</option>
+                            <option value="5">Physics</option>
+                            <option value="6">Geography</option>
+                            <option value="7">History</option>
+                            <option value="8">Math</option>
+                            <option value="9">Portuguese</option>
+                            <option value="10">Chemistry</option>
+                        </select>
+                    </div>
+                    <div class="input-block">
+                        <label for="cost">Cost of the hour/class
+                            <small>(R$)</small>
+                        </label>
+                        <input name="cost" id="cost" type="number">
+                    </div>
+                </fieldset>
+
+                <fieldset id="schedule-items">
+                    <legend>Time available
+                        <button id="add-time">+ New Time</button>
+                    </legend>
+
+                    <div class="schedule-item">
+
+                        <div class="select-block">
+                            <label for="weekday">Days of the weekday</label>
+                            <select name="weekday[]" id="weekday" required>
+                                <option value="" disabled="" hidden="">Select an option</option>
+                                <option value="0">Sunday</option>
+                                <option value="1">Monday</option>
+                                <option value="2">Tuesday</option>
+                                <option value="3">Wednesday</option>
+                                <option value="4">Thusday</option>
+                                <option value="5">Friday</option>
+                                <option value="6">Saturday</option>
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_from">Start</label>
+                            <input type="time" name="time_from[]" required>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_to">End</label>
+                            <input type="time" name="time_to[]" required>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+
+            <footer>
+                <p>
+                    <img src="/proffy/images/icons/warning.svg" alt="Warning">
+                    Warning! <br>
+                    Fill all fields
+                </p>
+                <button type="submit" form="create-class">Save</button>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
