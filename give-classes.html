@@ -15,7 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
         rel="stylesheet">
-
+    <script src="/proffy/scripts/addField.js" defer></script>
 </head>
 
 <body id="page-give-classes">
@@ -89,7 +89,7 @@
 
                 <fieldset id="schedule-items">
                     <legend>Time available
-                        <button id="add-time">+ New Time</button>
+                        <button type="button" id="add-time">+ New Time</button>
                     </legend>
 
                     <div class="schedule-item">
@@ -97,7 +97,7 @@
                         <div class="select-block">
                             <label for="weekday">Days of the weekday</label>
                             <select name="weekday[]" id="weekday" required>
-                                <option value="" disabled="" hidden="">Select an option</option>
+                                <option value="">Select an option</option>
                                 <option value="0">Sunday</option>
                                 <option value="1">Monday</option>
                                 <option value="2">Tuesday</option>
