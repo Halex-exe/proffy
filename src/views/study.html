@@ -55,7 +55,7 @@
                                 {{weekday}}
                             </option>
                             {%endfor%}
-                            
+
                         </select>
                     </div>
                     <div class="input-block">
@@ -69,8 +69,11 @@
 
         <main>
 
-            {%for proffy in proffys%}
-            <article class="teacher-item">
+            {%if proffys == ""%}
+                <p class="no-results">No teachers found with your search!</p>
+            {%else%}
+                {%for proffy in proffys%}
+                    <article class="teacher-item">
                 <header>
                     <img src="{{proffy.avatar}}" alt="{{proffy.name}}">
                     <div>
@@ -89,8 +92,9 @@
                         <img src="/images/icons/whatsapp.svg" alt="WhatsApp"> Say Hello!
                     </a>
                 </footer>
-            </article>
-            {%endfor%}
+                    </article>
+                {%endfor%}
+            {%endif%}
 
         </main>
     </div>
