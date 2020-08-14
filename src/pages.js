@@ -1,13 +1,47 @@
+const Database = require('./database/db')
+
 //const format = require('./utils/format')
-const {subjects, weekdays, getSubject} = require('./utils/format')
+const {subjects, weekdays, getSubject, convertHoursToMinutes} = require('./utils/format')
 
 function pageLanding(req, res){
     return res.render("index.html")
 }
 
-function pageStudy (req, res){
+async function pageStudy (req, res){
     const filters = req.query
-    return res.render("study.html", {proffys, filters, subjects, weekdays})
+
+    if (!filters.subject || !filters.weekday || !filters.time){
+        //console.log('have empty fields')
+        return res.render("study.html", {filters, subjects, weekdays})
+    }
+    //console.log('don`t have empty fields')
+    const timeToMinutes = convertHoursToMinutes(filters.time)
+
+    const query = `
+        SELECT classes.*, proffys.*
+        FROM proffys
+        JOIN classes ON (classes.proffy_id = proffys.id)
+        WHERE EXISTS (
+            SELECT class_schedule.*
+            FROM class_schedule
+            WHERE class_schedule.class_id = classes.id
+            AND class_schedule.weekday = ${filters.weekday}
+            AND class_schedule.time_from <= ${timeToMinutes}
+            AND class_schedule.time_to > ${timeToMinutes}
+        )
+        AND classes.subject = '${filters.subject}'
+    `
+
+    try {
+        const db = await Database
+        const proffys = await db.all(query)
+
+        return res.render("study.html", {proffys, filters, subjects, weekdays})
+
+    } catch (error) {
+        console.log(error)
+    }
+
 }
 
 function pageGiveClasses(req, res){

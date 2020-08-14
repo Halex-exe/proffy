@@ -19,9 +19,9 @@ Database.then(async (db) => {
     classScheduleValues = [
         //class id by database.
         {
-        weekday: 0, 
-        time_from: 720, 
-        time_to: 1220
+            weekday: 0, 
+            time_from: 720, 
+            time_to: 1220
         },
         {
             weekday: 1, 
