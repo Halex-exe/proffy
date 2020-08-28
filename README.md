@@ -5,7 +5,7 @@ Online teaching platform made to NLW (Next Level Week) #02
 
 This project was developed in the New Level Week (NLW) second edition, which consists of a study plataform for teachers and students, where Teachers can register their subject with schedule and prices per hour. The students can find the teachers registered in the platform and can also make searches using advanced filtering.
 
-the main objective of this project is to put into practice the WEB development using technologies such as HTML, CSS and JavaScript. 
+The main objective of this project is to put into practice the WEB development using technologies such as HTML, CSS and JavaScript. 
 
 ## Technologies
 
