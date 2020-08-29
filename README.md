@@ -1,4 +1,5 @@
-# proffy
+# Proffy
+
 Online teaching platform made to NLW (Next Level Week) #02
 
 ## About
@@ -11,13 +12,13 @@ The main objective of this project is to put into practice the WEB development u
 
 The following tools were used to build this project:
 
-- **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
-- **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
+- **[HTML](https://www.w3schools.com/html/default.asp)**
+- **[CSS](https://www.w3schools.com/css/default.asp)**
 - **[Express](https://expressjs.com/)**
-- **[JavaScript](https://www.javascript.com)**
+- **[JavaScript](https://www.w3schools.com/js/default.asp)**
 - **[NodeJS](https://nodejs.org/en/)**
-- **[Nodemon](https://github.com/remy/nodemon)**
-- **[Nunjucks](https://github.com/mozilla/nunjucks)**
+- **[Nodemon](https://www.npmjs.com/package/nodemon)**
+- **[Nunjucks](https://www.npmjs.com/package/nunjucks)**
 - **[SQLite](https://www.sqlite.org/index.html)**
 - **[Sqlite-async](https://www.npmjs.com/package/sqlite-async)**
 
@@ -40,6 +41,6 @@ npm start
 # The server starts at the door:5500 - Go to http://localhost:5500 
 ```
 
-## knowledges
+## Knowledges
 
 This project helped me to develop a pratical knowledge in real WEB development strategies, such as front-end and back-end. I learned layout techniques like CSS using a mobile first approach, therefore having a responsive Website in a variety of devices (desk and mobo). It was used the Express for the back-end operation in the project, also I learned how to use templating engine called Nonjucks to render HTML using a JavaScript, and to store the teachers information was used SQLite.
